@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marrz Lundquist - Resume</title>
+    <style>
+        body {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            color: #000;
+            line-height: 1.25; /* Slightly tighter to fit 0.5 margins */
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in; /* SAFE MARGINS - Do not go lower than 0.4 */
+            background-color: #fff;
+        }
+        
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 8px; 
+        }
+        h1 {
+            font-size: 22pt; /* Adjusted to balance the page */
+            margin: 0;
+            font-weight: normal;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .contact-info {
+            font-size: 9pt;
+            margin-top: 4px;
+        }
+        .contact-separator {
+            margin: 0 5px;
+        }
+
+        /* Sections */
+        h2 {
+            font-size: 11pt; /* Adjusted header size */
+            text-transform: uppercase;
+            border-bottom: 1px solid #000;
+            margin-top: 8px;
+            margin-bottom: 5px;
+            padding-bottom: 1px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Entries */
+        .entry {
+            margin-bottom: 5px; 
+        }
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 9.5pt;
+        }
+        .entry-sub {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            font-size: 9.5pt;
+            margin-bottom: 1px;
+        }
+        .entry-location {
+            font-style: normal;
+        }
+
+        /* Lists */
+        ul {
+            margin: 0;
+            padding-left: 16px;
+            font-size: 9pt; /* Body text size */
+        }
+        li {
+            margin-bottom: 1px;
+        }
+
+        /* Skills */
+        .skill-row {
+            margin-bottom: 1px;
+            font-size: 9pt;
+        }
+        .skill-label {
+            font-weight: bold;
+            width: 100px;
+            display: inline-block;
+        }
+
+        /* Print Specifics */
+        @media print {
+            body {
+                padding: 0;
+                margin: 0;
+            }
+            @page {
+                margin: 0.5in; /* The printer will respect this now */
+                size: letter;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Marrz Lundquist</h1>
+        <div class="contact-info">
+            Conroe, TX
+            <span class="contact-separator">|</span>
+            832-243-2498
+            <span class="contact-separator">|</span>
+            marrzlundquist@gmail.com
+        </div>
+    </header>
+
+    <section>
+        <h2>Education</h2>
+        
+        <div class="entry">
+            <div class="entry-header">
+                <span>Western Governors University</span>
+                <span>July 2025 – Expected Dec 2026</span>
+            </div>
+            <div class="entry-sub">
+                <span>Bachelor of Science, Computer Science</span>
+                <span class="entry-location">Remote</span>
+            </div>
+            <ul>
+                <li><strong>Relevant Coursework:</strong> Data Management (SQL), Web Development Foundations, Version Control (Git), Scripting & Programming (Python), Object-Oriented Programming (Java).</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>University of Houston-Victoria</span>
+                <span>Jan 2024 – June 2025</span>
+            </div>
+            <div class="entry-sub">
+                <span>Computer Science Transfer Studies</span>
+                <span class="entry-location">Katy, TX</span>
+            </div>
+            <ul>
+                <li><strong>GPA: 3.83</strong> | Dean's List (3 Terms), President's List (1 Term).</li>
+                <li>Completed foundational coursework in programming logic and mathematics before transferring to WGU to focus on specialized software engineering tracks.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>Lone Star College</span>
+                <span>Dec 2023</span>
+            </div>
+            <div class="entry-sub">
+                <span>Associate of Science</span>
+                <span class="entry-location">Cypress, TX</span>
+            </div>
+            <ul>
+                <li><strong>GPA: 3.72</strong> | Graduated <strong>Magna Cum Laude</strong>.</li>
+                <li>Inducted into <strong>Phi Theta Kappa Honors Society</strong>.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skill-row">
+            <span class="skill-label">Languages:</span> Java, Python, SQL, HTML5, CSS3, JavaScript
+        </div>
+        <div class="skill-row">
+            <span class="skill-label">Tools:</span> Docker, Git, GitHub, VS Code, Spring Framework, JUnit, IntelliJ
+        </div>
+        <div class="skill-row">
+            <span class="skill-label">Concepts:</span> Object-Oriented Programming, Database Normalization, RESTful Principles, Agile Methodology
+        </div>
+    </section>
+
+    <section>
+        <h2>Academic & Personal Projects</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>Cloud-Deployed Scheduling Application</span>
+                <span>March 2026</span>
+            </div>
+            <div class="entry-sub">
+                <span>REST APIs & Cloud Services, Docker, Java, Spring Framework</span>
+            </div>
+            <ul>
+                <li>Architected a Java Spring backend and successfully integrated it with a pre-existing Angular frontend via REST APIs, ensuring seamless data flow between the server and the user interface.</li>
+                <li>Refactored the core application logic to support multithreading, significantly improving the system's performance and concurrent data processing capabilities.</li>
+                <li>Deployed the complete software solution to cloud infrastructure, demonstrating full-cycle development and an understanding of modern production environments.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>Inventory Management System</span>
+                <span>Jan 2026</span>
+            </div>
+            <div class="entry-sub">
+                <span>Java, Spring Framework & JUnit</span>
+            </div>
+            <ul>
+                <li>Customized a Spring Framework application to meet specific business requirements, implementing complex inventory validation logic to prevent stock discrepancies.</li>
+                <li>Developed and executed JUnit tests to verify data integrity for maximum/minimum inventory constraints, ensuring robust error handling.</li>
+                <li>Managed version control workflows in GitLab, utilizing feature branches to implement "Buy Now" transactional features without disrupting the production codebase.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>Employee Database Management System</span>
+                <span>Nov 2025</span>
+            </div>
+            <div class="entry-sub">
+                <span>SQL & Database Design</span>
+            </div>
+            <ul>
+                <li>Designed a normalized relational database schema to manage complex business records, ensuring data integrity through the strict implementation of primary and foreign keys.</li>
+                <li>Constructed optimized SQL queries to filter, group, and extract specific data points for reporting, demonstrating proficiency in data manipulation.</li>
+            </ul>
+        </div>
+
+    <section>
+        <h2>Professional Experience</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>Private Consultant (Behavioral Coach)</span>
+                <span>Jul 2023 – Mar 2024</span>
+            </div>
+            <div class="entry-sub">
+                <span>Self-Employed</span>
+                <span class="entry-location">Katy, TX</span>
+            </div>
+            <ul>
+                <li>Managed a long-term client engagement focused on goal setting and accountability frameworks over a 12-month period.</li>
+                <li>Designed and executed personalized development plans that led to measurable improvements in client performance and retention.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>Lone Star College</span>
+                <span>May 2022 – Jun 2023</span>
+            </div>
+            <div class="entry-sub">
+                <span>Program Coordinator Assistant</span>
+                <span class="entry-location">Cypress, TX</span>
+            </div>
+            <ul>
+                <li>Optimized training logistics for firefighter/paramedic trainees by designing and assembling standardized equipment "mock-up kits."</li>
+                <li>Increased daily training capacity by <strong>45 minutes</strong> through process improvements in equipment organization and inventory management.</li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+</html>
